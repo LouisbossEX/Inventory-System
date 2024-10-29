@@ -15,7 +15,7 @@ MonoBehaviour:
   InventoryLength: 36
   HotbarRowLength: 9
   InventoryRowLength: 9
-  HotbarSlots: 15
+  HotbarSlots: 9
   initialItemsList:
   - item: {fileID: 11400000, guid: 389e895fd06ff76428af43d15364be14, type: 2}
     amount: 10
