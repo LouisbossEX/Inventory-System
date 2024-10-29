@@ -15,4 +15,5 @@ MonoBehaviour:
   Data:
     ID: 2
     MaxStackQuantity: 1
+    ItemName: Iron Axe
   Sprite: {fileID: 21300000, guid: 28abc06d121960e4cbc2bea31d282aed, type: 3}

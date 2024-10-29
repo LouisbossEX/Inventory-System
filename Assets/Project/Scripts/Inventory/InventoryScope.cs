@@ -9,6 +9,7 @@ public class InventoryScope : LifetimeScope
     [SerializeField] private PlayerInventoryConfig playerInventoryConfig;
     [SerializeField] private ItemDataScriptableObject[] allItems;
     [SerializeField] private Sprite emptySprite;
+    [SerializeField] private DebugMenu debugMenu = new();
     
     protected override void Configure(IContainerBuilder builder)
     {
@@ -22,12 +23,15 @@ public class InventoryScope : LifetimeScope
         var spritesDictionary = allItems.ToDictionary(x => x.Data.ID, x => x.Sprite);
         spritesDictionary.Add(-1, emptySprite);
         
-        builder.RegisterEntryPoint<PlayerInventory>().AsSelf();
+        builder.RegisterInstance(allItems);
         builder.RegisterInstance(inventory);
         builder.RegisterInstance(playerInventoryConfig);
         builder.RegisterInstance(Item.Empty());
         builder.Register<InventorySlot>(Lifetime.Transient);
         builder.Register<ItemSpriteFactory>(Lifetime.Singleton)
             .WithParameter("sprites", spritesDictionary);
+        builder.RegisterComponent(debugMenu);
+        
+        builder.RegisterEntryPoint<PlayerInventory>().AsSelf();
     }
 }

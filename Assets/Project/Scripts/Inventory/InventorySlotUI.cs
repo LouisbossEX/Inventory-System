@@ -9,7 +9,7 @@ public interface IItemDisplayMutator
     void UpdateQuantity(int quantity);
 }
 
-public class InventorySlotDisplayer : MonoBehaviour, IItemDisplayMutator
+public class InventorySlotUI : MonoBehaviour, IItemDisplayMutator
 {
     [SerializeField] private Image itemImage;
     [SerializeField] private TextMeshProUGUI itemCountText;

@@ -1,14 +1,15 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using VContainer;
 
 public class HeldItemDisplayer : MonoBehaviour
 {
-    [SerializeField] private InventorySlotDisplayer itemHeldDisplayer;
+    [FormerlySerializedAs("itemHeldDisplayer")] [SerializeField] private InventorySlotUI itemHeldUI;
     private RectTransform displayerRect;
 
     private void Awake()
     {
-        displayerRect = itemHeldDisplayer.transform as RectTransform;
+        displayerRect = itemHeldUI.transform as RectTransform;
     }
 
     [Inject]
@@ -24,7 +25,7 @@ public class HeldItemDisplayer : MonoBehaviour
 
     private void UpdateHeldItem(Item itemToDisplay)
     {
-        itemHeldDisplayer.UpdateItem(itemToDisplay.ItemData.ID);
-        itemHeldDisplayer.UpdateQuantity(itemToDisplay.ItemQuantity);
+        itemHeldUI.UpdateItem(itemToDisplay.ItemData.ID);
+        itemHeldUI.UpdateQuantity(itemToDisplay.ItemQuantity);
     }
 }

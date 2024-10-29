@@ -15,4 +15,5 @@ MonoBehaviour:
   Data:
     ID: 1
     MaxStackQuantity: 64
+    ItemName: Banana
   Sprite: {fileID: 21300000, guid: 4c7bafcd1270b254e80ca3b2bf7f1bdd, type: 3}

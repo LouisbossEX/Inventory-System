@@ -15,4 +15,5 @@ MonoBehaviour:
   Data:
     ID: 0
     MaxStackQuantity: 64
+    ItemName: Apple
   Sprite: {fileID: 21300000, guid: 8fe1069847a2cc540998595d33f7bb22, type: 3}

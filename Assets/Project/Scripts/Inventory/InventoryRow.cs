@@ -4,7 +4,7 @@ using VContainer;
 
 public class InventoryRow : MonoBehaviour
 {
-    [SerializeField] private InventorySlotDisplayer inventorySlotPrefab;
+    [SerializeField] private InventorySlotUI inventorySlotPrefab;
 
     public void FillRow(int index, int slots, List<InventorySlot> itemList, IObjectResolver resolver)
     {

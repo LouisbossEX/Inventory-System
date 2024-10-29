@@ -5,6 +5,7 @@ public class ItemData
 {
     public int ID;
     public int MaxStackQuantity;
+    public string ItemName;
 
     public static readonly ItemData NoItem = new ItemData(-1, 1);
     

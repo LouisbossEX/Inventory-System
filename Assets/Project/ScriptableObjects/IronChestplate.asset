@@ -15,4 +15,5 @@ MonoBehaviour:
   Data:
     ID: 3
     MaxStackQuantity: 1
+    ItemName: Iron Chestplate
   Sprite: {fileID: 21300000, guid: 7312b666e5b64bd408e5914d5a33cf86, type: 3}
