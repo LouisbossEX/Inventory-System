@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b307e816d69590f448d85d2a170e6a5a, type: 3}
+  m_Name: Player Inventory Config
+  m_EditorClassIdentifier: 
+  InventoryLength: 36
+  HotbarRowLength: 9
+  InventoryRowLength: 9
+  HotbarSlots: 15
+  initialItemsList:
+  - item: {fileID: 11400000, guid: 389e895fd06ff76428af43d15364be14, type: 2}
+    amount: 10
+  - item: {fileID: 11400000, guid: 4c21cd8002b3a2b4d8055ad1c829ee1a, type: 2}
+    amount: 5
+  - item: {fileID: 11400000, guid: 1e723d1c72f5cf4498be648d4330a02f, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 3cf265cf71f3deb40b947ec910045597, type: 2}
+    amount: 2
